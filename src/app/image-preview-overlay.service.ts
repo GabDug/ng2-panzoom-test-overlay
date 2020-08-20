@@ -1,5 +1,5 @@
 import { ComponentRef, Inject, Injectable, Injector } from '@angular/core';
-import { BlockScrollStrategy, Overlay, OverlayConfig, OverlayRef } from '@angular/cdk/overlay';
+import {  Overlay, OverlayConfig, OverlayRef } from '@angular/cdk/overlay';
 import { ComponentPortal, PortalInjector } from '@angular/cdk/portal';
 
 import { ImagePreviewOverlayComponent } from './image-preview-overlay/image-preview-overlay.component';

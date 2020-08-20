@@ -1,21 +1,16 @@
-<div
-    (click)="close()"
-    [@slideDown]="slideDown"
-    class="absolute top-0 right-0 p-2 text-xl cursor-pointer bg-gray-400 bg-opacity-25 rounded-bl-lg rounded-none"
-    style="z-index: 1100;"
+<div (click)="center()"
+     style="position: absolute; top: 0;right:0; cursor: pointer;z-index: 1100;"
 >
-    <span class="mx-2"><i class="fas fa-times text-white"></i></span>
+    <span>Close</span>
 </div>
 
 <div class="overlay-content">
-    <div
-        style="position: absolute; top: 0px; bottom: 0px; left: 0px; right: 0px;"
-    >
+    <div style="position: absolute; top: 0px; bottom: 0px; left: 0px; right: 0px;">
         <pan-zoom [config]="panZoomConfig">
-                <img
+            <img
                     alt="Prévisualisation"
                     src="https://picsum.photos/536/354"
-                />
+            />
         </pan-zoom>
     </div>
 

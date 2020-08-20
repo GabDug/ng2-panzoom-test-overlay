@@ -19,26 +19,4 @@ export class AppComponent {
         });
     }
   name = "Angular " + VERSION.major;
-  // PanZoomRelated
-  panZoomConfig: PanZoomConfig = new PanZoomConfig({
-    scalePerZoomLevel: 1.05,
-    zoomButtonIncrement: 6,
-    zoomLevels: 20,
-    freeMouseWheel: true,
-    freeMouseWheelFactor: 0.01
-  });
-  panZoomAPI: PanZoomAPI;
-  apiSubscription: Subscription;
-
-  ngOnInit(): void {
-    this.apiSubscription = this.panZoomConfig.api.subscribe(
-      (api: PanZoomAPI) => {
-        this.panZoomAPI = api;
-      }
-    );
-  }
-
-  center(): void {
-    this.panZoomAPI.centerContent();
-  }
 }
